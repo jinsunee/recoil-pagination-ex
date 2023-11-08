@@ -19,9 +19,11 @@ export default function PostItems() {
           <Skeleton baseColor="#f2f2f2" />
         </div>
       )}
-      {posts.map((post) => (
-        <PostItem key={post.id} {...post} />
-      ))}
+      <div className="gap-10">
+        {posts.map((post) => (
+          <PostItem key={post.id} {...post} />
+        ))}
+      </div>
     </>
   );
 }

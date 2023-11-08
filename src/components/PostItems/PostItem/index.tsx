@@ -3,7 +3,7 @@ import { Post } from "../../../types";
 
 interface Props extends Post {}
 
-function PostItem({ id, title, body }: Props) {
+function PostItem({ title, body }: Props) {
   return (
     <div className="post-item">
       <div className="title'">{title}</div>
